@@ -22,4 +22,8 @@ describe("pigLatin", function() {
   it("will move the first, second, and third letters of a word that begins with a consonant + q + u", function() {
     expect(pigLatin("squeal")).to.equal("ealsquay");
   });
+
+  it("return a sentence of pig latin words from an inputed sentence", function() {
+    expect(pigLatin("hello dear friend")).to.equal("ellohay earday iendfray")
+  });
 });
